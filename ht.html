@@ -1,0 +1,148 @@
+><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            font-size: 22px;
+        }
+        .login-btn {
+            background-color: white;
+            color: #0073e6;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .login-btn:hover {
+            background-color: #ddd;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px;
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .college-list, .blogs-section {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px gray;
+            margin-top: 20px;
+        }
+        .college-item, .blog-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+        }
+        .college-item:last-child, .blog-item:last-child {
+            border-bottom: none;
+        }
+        .college-name, .blog-title {
+            font-size: 20px;
+            color: #0073e6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .college-name:hover, .blog-title:hover {
+            text-decoration: underline;
+        }
+        .rating {
+            color: #ff9800;
+            font-weight: bold;
+        }
+        .compare-btn, .upload-btn {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .compare-btn:hover, .upload-btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>College Finder</div>
+        <button class="login-btn" onclick="location.href='login.html'">Login</button>
+    </header>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search for a college..." />
+        <button class="compare-btn">Search</button>
+    </div>
+
+    <div class="college-list">
+        <h2>Colleges</h2>
+        <div class="college-item">
+            <a href="https://g.co/kgs/y45gr3V" target="_blank" class="college-name">
+                Viswajyothi College of Engineering and Technology
+            </a>
+            <div>Location: Kerala, India</div>
+            <div>Courses: Engineering, MBA</div>
+            <div class="rating">Rating: 4.2/5 ⭐</div>
+            <button class="compare-btn">Compare</button>
+        </div>
+        
+        <div class="college-item">
+            <a href="https://www.iitb.ac.in/" target="_blank" class="college-name">
+                IIT Bombay
+            </a>
+            <div>Location: Mumbai, India</div>
+            <div>Courses: Engineering, Sciences</div>
+            <div class="rating">Rating: 4.8/5 ⭐</div>
+            <button class="compare-btn">Compare</button>
+        </div>
+
+        <div class="college-item">
+            <a href="https://www.iisc.ac.in/" target="_blank" class="college-name">
+                IISc Bangalore
+            </a>
+            <div>Location: Bangalore, India</div>
+            <div>Courses: Research, Sciences</div>
+            <div class="rating">Rating: 4.9/5 ⭐</div>
+            <button class="compare-btn">Compare</button>
+        </div>
+    </div>
+
+    <div class="blogs-section">
+        <h2>Blogs</h2>
+        <button class="upload-btn" onclick="location.href='upload_blog.html'">Upload Blog</button>
+        <div class="blog-item">
+            <a href="#" class="blog-title">My Experience at IIT Bombay</a>
+            <div>By: Student123</div>
+            <p>A detailed experience of life at IIT Bombay...</p>
+        </div>
+
+        <div class="blog-item">
+            <a href="#" class="blog-title">Why Viswajyothi College is a Great Choice</a>
+            <div>By: CollegeReviewer</div>
+            <p>Exploring the facilities, placements, and academic culture...</p>
+        </div>
+    </div>
+
+</body>
+</html>
